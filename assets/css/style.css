@@ -1,13 +1,3 @@
-/**
-* Template Name: Knight - v4.3.0
-* Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #555555;
@@ -439,9 +429,16 @@ section {
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
-.about .image {
-  padding: 20px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+.about .video {
+  padding-left: 50px;
+  /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
+}
+
+.vd {
+  width: 450px;
+  height: 250px;
+  border-radius: 10px;
+  float: right;
 }
 
 .about .content h3 {
@@ -1136,6 +1133,8 @@ section {
 }
 
 .team .member .member-img {
+  /* width: 460px; */
+  /* height: 460px; */
   position: relative;
   overflow: hidden;
   border-radius: 5px;
@@ -1149,7 +1148,7 @@ section {
   height: 40px;
   opacity: 0;
   transition: bottom ease-in-out 0.4s;
-  background: rgba(124, 197, 118, 0.8);
+  background: #ff2b06;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1397,7 +1396,7 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: #eaf6e9;
+  background: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1456,7 +1455,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #000000;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1476,7 +1475,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #000000;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -1575,7 +1574,10 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: url("../img/footer-bg.jpg") center center no-repeat;
+  width: 100%;
+  height: 100%;
+  background: url("../img/hero-bg.png");
+  position: relative;
   color: #fff;
   font-size: 14px;
   position: relative;
@@ -1681,7 +1683,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #5ab652;
+  background: #000000;
   color: #fff;
   text-decoration: none;
 }
@@ -1702,4 +1704,16 @@ section {
   text-align: center;
   font-size: 13px;
   padding-top: 5px;
+}
+.video-mask {
+  border-radius: 100px;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  align-items: center;
+  top: 0; right: 0; 
+  bottom: 0; left: 0;
+  margin: auto;
+  margin-left: 50%;
+  transform: translate(-50%);
 }
